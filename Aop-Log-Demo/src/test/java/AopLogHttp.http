@@ -1,0 +1,10 @@
+###
+GET http://localhost:8080/test?who=chen
+
+###
+POST http://localhost:8080/testJson
+Content-Type: application/json
+
+{
+  "name": "chen"
+}
