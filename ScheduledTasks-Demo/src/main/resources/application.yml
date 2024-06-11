@@ -1,0 +1,15 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /demo
+
+# 下面的配置等同于 TaskConfig
+
+spring:
+  task:
+    execution:
+      pool:
+        core-size: 10
+        max-size: 200
+        queue-capacity: 10
+      thread-name-prefix: Job-Thread-
